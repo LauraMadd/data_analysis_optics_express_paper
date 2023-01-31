@@ -149,7 +149,7 @@ plt.rc('font', **font)
 
 
 type = 'aniso_sph'
-date = 'precise_22_12'
+date = 'precise_22_12_20'
 semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\method_validation\\' #office
 # semi_path='W:\\staff-groups\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Hidde\\' #home_laura
 save_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\Laura\\manuscripts\\spatially precise manipulations\\py_figures\\figure_3\\'

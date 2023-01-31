@@ -142,7 +142,7 @@ def getAberrationPhase(dataset,lam,coeffs):
 
 # semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\test_gui_AO\\02_03\\fep_fov100\\weighted_nearest\\analysis_w\\'
 
-semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\02_03'
+semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\02_03_21'
 semi_path_grid=semi_path+'\\fep_fov100\\'
 
 save_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\Laura\\manuscripts\\spatially precise manipulations\\py_figures\\figure_4\\'
@@ -507,7 +507,7 @@ f.close()
 # # fig_int.savefig(save_path+'intensities'+str(folders[i])+ '.png',dpi=300, bbox_inches='tight')
 # #
 # -----------------------------------------Phase  maps-----------------------------
-semi_path_zernikes_grid='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\02_03\\fep_fov100\\20210302-135835_aniso\\'
+semi_path_zernikes_grid='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\02_03_21\\fep_fov100\\20210302-135835_aniso\\'
 best_weights_grid=pickle.load(open(semi_path_zernikes_grid+'_best_weights.p','rb'))
 
 

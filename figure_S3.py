@@ -140,7 +140,7 @@ def getAberrationPhase(dataset,lam,coeffs):
 # Script to plot raw and corrected for baseline and aberrated datasets +bar plots.
 # Change paths and ylimits and ythicks bar plots
 #-------------------------Paths ---------------------------------
-semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\30_03\\fep_repetition\\'
+semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\30_03_21\\fep_repetition\\'
 
 # semi_path='W:\\staff-groups\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\test_gui_AO\\30_03\\fep_repetition\\'
 # save_path=semi_path+'\\data_analysis\\'

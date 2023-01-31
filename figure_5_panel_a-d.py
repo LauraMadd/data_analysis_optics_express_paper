@@ -149,7 +149,7 @@ def getAberrationPhase(dataset,lam,coeffs):
 #-------------------------Paths ---------------------------------
 
 # semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\test_gui_AO\\23_02\\fep\\'
-semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\02_03\\fep_fov100\\weighted_nearest\\analysis_w\\'
+semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\02_03_21\\fep_fov100\\weighted_nearest\\analysis_w\\'
 save_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\Laura\\manuscripts\\spatially precise manipulations\\py_figures\\figure_5\\'
 
 ##-----------------------------------Total images random -------------------------------
@@ -427,7 +427,7 @@ coords_corr_sample[0,:]=xc_im*M_2*pix_size
 coords_corr_sample[1,:]=yc_im*M_2*pix_size
 coords_corr_sample[2,:]= 136.684 *(0.609355*defocus_voltage-1.51339)
 # #transformation to SLM
-camera_to_slm_matrix=np.load('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\02_03\\t_aff_rand_bigrange_20_fov130\\T_affine.npy')
+camera_to_slm_matrix=np.load('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\02_03_21\\t_aff_rand_bigrange_20_fov130\\T_affine.npy')
 coords_corr_slm=np.zeros((3,n_points))
 coords_corr_slm=np.dot(camera_to_slm_matrix,coords_corr_sample)
 
@@ -514,7 +514,7 @@ r=np.sqrt(xc**2+yc**2)
 zern_dataset = generateAberrationDataset(res,base,order)
 
 #------------------Phase maps weighted, figure 5 panel c
-semi_path_zernikes='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\02_03\\fep_fov100\\weighted_nearest\\'
+semi_path_zernikes='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\02_03_21\\fep_fov100\\weighted_nearest\\'
 best_weights=np.load(semi_path_zernikes+'zernikes_w.npy')
 
 fig_aniso, axs =plt.subplots(3,4,figsize=(30, 30))

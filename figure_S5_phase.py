@@ -151,10 +151,10 @@ plt.rc('legend', fontsize=BIGGER_SIZE)    # legend fontsize
 plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
 # plot fish+fep
-# semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\test_gui_AO\\23_02\\fish_side+fep\\'
+# semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\experiments_AO\\23_02\\fish_side+fep\\'
 # best_weights=pickle.load(open(semi_path+'20210223-165858_aniso\\'+'_best_weights.p','rb'))
 # data_flag='fep+fish'
-semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\23_02\\fish_side\\20210223-180909_aniso\\'
+semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\23_02_21\\fish_side\\20210223-180909_aniso\\'
 # path_images=semi_path+'comparison_raw_fep_corr_total_corr\\'
 save_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\Laura\\manuscripts\\spatially precise manipulations\\py_figures\\figure_7\\extra\\'
 best_weights=pickle.load(open(semi_path+'_best_weights.p','rb'))

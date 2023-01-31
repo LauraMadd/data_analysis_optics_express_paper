@@ -38,13 +38,13 @@ plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 #-------------------------------------------------------------------------------
 #-------------------------Bar plot best weights---------------------------------
 type_aniso = 'aniso_sph'
-date_aniso = 'precise_22_12'
+date_aniso = 'precise_22_12_20'
 
 type_iso = 'iso_sph'
-date_iso = 'precise_22_12'
+date_iso = 'precise_22_12_20'
 
 type_base = "baseline"
-date_base = "precise_22_12"
+date_base = "precise_22_12_20"
 
 semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\method_validation\\'
 save_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\Laura\\manuscripts\\spatially precise manipulations\\py_figures\\figure_3\\'
@@ -212,7 +212,7 @@ cbar_aniso.set_ticklabels([r'$0$', r'$1$'])
 plt.show()
 fig_aniso.savefig(save_path+'im_total_aniso_alpha'+str(alpha)+'.png',dpi=300, bbox_inches='tight')
 # -----------------------Plot single points-------------------------------------
-gauss_fit_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\method_validation\\precise_22_12\\stack\\analysis_stack_0.5\\gauss_fit_cgh\\'
+gauss_fit_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\method_validation\\precise_22_12_20\\stack\\analysis_stack_0.5\\gauss_fit_cgh\\'
 # gauss_fit_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Hidde\\precise_22_12\\iso_sph\\data_analysis\\gauss_fit_bis\\'
 # save_path=save_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\Laura\\manuscripts\\spatially precise manipulations\\py_figures\\figure_3\\iso\\'
 folders=os.listdir(gauss_fit_path)
@@ -515,7 +515,7 @@ f.close()
 
 # # -------------------------------- plot lines profile xz, panel e and d bottom----------------------------
 
-gauss_fit_z_path="M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\method_validation\\precise_22_12\\stack\\stack_20201222-152845_aniso_0.5um\\data_analysis\\gauss_fit_z\\"
+gauss_fit_z_path="M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\method_validation\\precise_22_12_20\\stack\\stack_20201222-152845_aniso_0.5um\\data_analysis\\gauss_fit_z\\"
 
 folders=os.listdir(gauss_fit_z_path)
 # variables to save all data

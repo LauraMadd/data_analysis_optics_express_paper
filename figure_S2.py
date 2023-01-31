@@ -140,9 +140,9 @@ def getAberrationPhase(dataset,lam,coeffs):
 #-------------------------Paths ---------------------------------
 
 
-# semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\test_gui_AO\\02_03\\fep_fov100\\weighted_nearest\\analysis_w\\'
+# semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\experiments_AO\\02_03\\fep_fov100\\weighted_nearest\\analysis_w\\'
 
-semi_path_h='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\method_validation\\19_02\\hline8\\'
+semi_path_h='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\method_validation\\19_02_21\\hline8\\'
 
 
 save_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\Laura\\manuscripts\\spatially precise manipulations\\py_figures\\figure_S2\\'
@@ -291,7 +291,7 @@ fig_barplt.savefig(save_path+'bar_plot_h.png',dpi=300, bbox_inches='tight')
 
 #==============================================================================
 
-semi_path_v='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\19_02\\vline8\\'
+semi_path_v='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\19_02_21\\vline8\\'
 
 
 save_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\Laura\\manuscripts\\spatially precise manipulations\\py_figures\\figure_S2\\'
@@ -358,7 +358,7 @@ plt.show()
 fig_4.savefig(save_path+'v_im_corr_scale.png',dpi=300, bbox_inches='tight')
 
 # -----------------------------------------Phase  maps-----------------------------
-semi_path_v='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\19_02\\vline8\\'
+semi_path_v='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\19_02_21\\vline8\\'
 best_weights_v=pickle.load(open(semi_path_v+'_best_weights.p','rb'))
 
 #

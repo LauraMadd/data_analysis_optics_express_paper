@@ -42,8 +42,8 @@ plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
 #-------------------------Paths ---------------------------------
 #----------to change------------
-semi_path_metrics='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\30_03\\fep_repetition\\fep_spatial_astm2\\'
-semi_path_points='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\30_03\\fep_repetition\\data_analysis\\gauss_fit_astm2\\'
+semi_path_metrics='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\30_03_21\\fep_repetition\\fep_spatial_astm2\\'
+semi_path_points='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\30_03_21\\fep_repetition\\data_analysis\\gauss_fit_astm2\\'
 flag_save='astm2'
 save_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\Laura\\manuscripts\\spatially precise manipulations\\py_figures\\figure_6\\'
 #----------------------------------

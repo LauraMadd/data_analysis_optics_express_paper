@@ -47,15 +47,15 @@ plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
 
 #-------------------------Paths ---------------------------------
-semi_path ='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\30_03\\3D_holo\\'
+semi_path ='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\30_03_21\\3D_holo\\'
 semi_path_random =semi_path+'random\\'
 save_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\Laura\\manuscripts\\spatially precise manipulations\\py_figures\\figure_5\\'
 #-----------------------------------------------------------------------------
 
 #values z positions
-coords_im=np.load('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\30_03\\3D_holo\\random\\coords_20210330-184343\\coords_cameraholoName.npy')
+coords_im=np.load('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\30_03_21\\3D_holo\\random\\coords_20210330-184343\\coords_cameraholoName.npy')
 z=np.zeros((coords_im.shape[0]),dtype=float )
-z_index=np.load('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\30_03\\3D_holo\\random\\coords_20210330-184343\\stack_index.npy')
+z_index=np.load('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\30_03_21\\3D_holo\\random\\coords_20210330-184343\\stack_index.npy')
 z_min=39.7039
 dz=0.49629
 
@@ -507,7 +507,7 @@ coords_corr_sample[0,:]=xc_im*M_2*pix_size
 coords_corr_sample[1,:]=yc_im*M_2*pix_size
 coords_corr_sample[2,:]= 136.906*(0.608306*defocus_voltage[:]-1.5091)
 # #transformation to SLM
-camera_to_slm_matrix=np.load('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\30_03\\t_aff_rand_bigrange_20_fov130\\T_affine.npy')
+camera_to_slm_matrix=np.load('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\30_03\\t_aff_rand_bigrange_20_fov130\\T_affine.npy')
 coords_corr_slm=np.zeros((3,n_points))
 coords_corr_slm=np.dot(camera_to_slm_matrix,coords_corr_sample)
 
@@ -592,7 +592,7 @@ sigma_dst_raw=np.std(dst_raw)
 #
 # plt.show()
 # fig4.savefig(save_path+'fidelity_comparison.png',dpi=300, bbox_inches='tight')
-#---Figure 5 panel h 
+#---Figure 5 panel h
 fig5 = plt.figure(figsize=(8,2), linewidth=2.0)
 x= np.linspace(1,n_points, n_points)
 x_ticks=[]

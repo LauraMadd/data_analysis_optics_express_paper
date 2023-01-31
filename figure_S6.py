@@ -32,7 +32,7 @@ plt.rc('legend', fontsize=MEDIUM_SIZE)    # legend fontsize
 plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
 
-semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\16_02\\fish_1\\fep+fish\\'
+semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\16_02_21\\fish_1\\fep+fish\\'
 save_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\Laura\\manuscripts\\spatially precise manipulations\\py_figures\\figure_S5\\'
 #
 # #load images
@@ -120,7 +120,7 @@ results_max_raw=np.zeros((len(folders), 1), dtype=float)
 for i in range (len(folders)):
 
 
-    # rois_files=fnmatch.filter(os.listdir('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\test_gui_AO\\02_02\\beads_0.1_um\\set_2\\stack_20210202-175600\\4analysis\\'), '*.tif')
+    # rois_files=fnmatch.filter(os.listdir('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\experiments_AO\\02_02\\beads_0.1_um\\set_2\\stack_20210202-175600\\4analysis\\'), '*.tif')
     data_path=semi_path+sub_folder+folders[i]+'\\'
     files = [['original.tif','corrected.tif']]
     print('path:', data_path,'iteration:',i )
@@ -305,7 +305,7 @@ fig_profiles.savefig(save_path+'total_xy_line_profile_int.png',dpi=300, bbox_inc
 
 #---fep correction
 #
-folder= 'M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\16_02\\fish_1\\fep+fish\\20210216-120922_aniso\\'
+folder= 'M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\16_02_21\\fish_1\\fep+fish\\20210216-120922_aniso\\'
 points = ['000','001']
 n_zerny=21
 color_i=['blue', 'green', 'red']

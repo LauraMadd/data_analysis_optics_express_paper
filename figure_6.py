@@ -34,9 +34,9 @@ plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
 #-------------------------Bar plot best weights---------------------------------
 
-# semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\test_gui_AO\\23_02\\fep\\'
-semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\23_02\\fish_side+fep\\'
-semi_path_fep='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\23_02\\fep\\'
+# semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\experiments_AO\\23_02\\fep\\'
+semi_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\23_02_21\\fish_side+fep\\'
+semi_path_fep='M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\23_02_21\\fep\\'
 path_images=semi_path+'comparison_raw_fep_corr_total_corr\\'
 save_path='M:\\tnw\\ist\\do\\projects\\Zebrafish\\Laura\\manuscripts\\spatially precise manipulations\\py_figures\\figure_7\\'
 
@@ -228,7 +228,7 @@ results_i_corr=np.zeros((len(folders), 1), dtype=float)
 results_i_raw=np.zeros((len(folders), 1), dtype=float)
 for i in range (len(folders)):
 
-# rois_files=fnmatch.filter(os.listdir('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\test_gui_AO\\02_02\\beads_0.1_um\\set_2\\stack_20210202-175600\\4analysis\\'), '*.tif')
+# rois_files=fnmatch.filter(os.listdir('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\experiments_AO\\02_02\\beads_0.1_um\\set_2\\stack_20210202-175600\\4analysis\\'), '*.tif')
     data_path=path_images+sub_folder+folders[i]+'\\'
     files = [['original.tif','corrected.tif']]
 
@@ -499,7 +499,7 @@ fig_int.savefig(save_path+'lateral_intensities.png',dpi=300, bbox_inches='tight'
 # coords_corr_sample[1,:]=yc_im*M_2*pix_size
 # coords_corr_sample[2,:]= 136.763 *(0.596613*defocus_voltage-1.47153)
 # # #transformation to SLM
-# camera_to_slm_matrix=np.load('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\23_02\\t_aff_rand_bigrange_20_fov130\\T_affine.npy')
+# camera_to_slm_matrix=np.load('M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\23_02\\t_aff_rand_bigrange_20_fov130\\T_affine.npy')
 # coords_corr_slm=np.zeros((3,n_points))
 # coords_corr_slm=np.dot(camera_to_slm_matrix,coords_corr_sample)
 #
@@ -599,7 +599,7 @@ fig_int.savefig(save_path+'lateral_intensities.png',dpi=300, bbox_inches='tight'
 
 #-------------------  plotting the intensity/ diameter progression through the zernikes, figure 6 panel e ----------------
 # ---fep correction
-folder= 'M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\23_02\\fep\\20210223-160846_aniso\\'
+folder= 'M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\23_02_21\\fep\\20210223-160846_aniso\\'
 points = ['000','001','002']
 
 metric_1_fep=np.zeros((len(points),41), dtype=np.float)
@@ -671,7 +671,7 @@ for j, point  in enumerate (points):
 
 #---fep + fish correction
 
-folder= 'M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\23_02\\fish_side+fep\\20210223-165858_aniso\\'
+folder= 'M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\23_02_21\\fish_side+fep\\20210223-165858_aniso\\'
 points = ['000','001','002']
 metric_1_fepfish=np.zeros((len(points),41), dtype=np.float)
 diameter_fepfish =np.zeros((len(points),41), dtype=np.float)
@@ -808,7 +808,7 @@ fig_m1_vs_index.savefig(save_path+'improvement_metric_exp_total.png',dpi=300, bb
 #===================================plot metric as function of measurement, fig supplementatry 4 ================================================
 #
 # # ---fep correction
-folder= 'M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\23_02\\fep\\20210223-160846_aniso\\'
+folder= 'M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\23_02_21\\fep\\20210223-160846_aniso\\'
 points = ['000','001','002']
 n_weights=15
 n_zernike=41
@@ -885,7 +885,7 @@ for j, point  in enumerate (points):
 
 # ---fep + fish correction
 
-folder= 'M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\test_gui_AO\\23_02\\fish_side+fep\\20210223-165858_aniso\\'
+folder= 'M:\\tnw\\ist\\do\\projects\\Zebrafish\\DATA\\Laura\\adaptive_optics\\experiments_AO\\23_02_21\\fish_side+fep\\20210223-165858_aniso\\'
 points = ['000','001','002']
 metric_1_fepfish=np.zeros((len(points),n_meas), dtype=np.float)
 diameter_fepfish =np.zeros((len(points),n_meas), dtype=np.float)
